@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 const initialState = {
   name: 'Sergey',
   age: 18,
