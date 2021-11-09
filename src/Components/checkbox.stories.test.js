@@ -1,12 +1,13 @@
-import Checkboxing from './index'
+import Checkboxing from './index.jsx'
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 
-describe('Our testing', () => {
-  test('Должна проверить есть ли свойтво в обьекте', () => {
-    return <Checkboxing />
-  })
-  const can = {
-    name: 'pamplemousse',
-    ounces: 12,
-  }
-  expect(can.name).toBe('pamplemousse')
+it('renders the checked inside checkbox ', () => {
+  render(<Checkboxing {...Checkboxing.args} />)
+  expect(screen.getByText('checked')).toHaveTextContent('Checkboxing')
+})
+
+test('самописный текст', () => {
+  render(<p>First a wall</p>)
+  expect(screen.getByText('First a wall')).toBeInTheDocument()
 })

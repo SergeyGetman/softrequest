@@ -1,13 +1,13 @@
-import React from 'react'
 import './App.css'
 
-function App() {
+const name = 'TestOwnProperty'
+
+function App(props) {
   return (
     <div className="App">
-      <h1>First step redux...</h1>
+      <h1>First step redux</h1>
     </div>
   )
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default App

@@ -1,4 +1,6 @@
 import React from 'react'
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 import ReactDOM from 'react-dom'
 import App from './App'
 
@@ -7,7 +9,7 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div)
   ReactDOM.unmountComponentAtNode(div)
 })
-
+// one for example
 function filterByTerm(inputArr, searchTerm) {
   return inputArr.filter(function (arrayElement) {
     return arrayElement.url.match(searchTerm)

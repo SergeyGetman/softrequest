@@ -1,5 +1,5 @@
 import React from 'react'
-import Checkboxing from './index'
+import Checkboxing from './index.jsx'
 
 export default {
   title: 'Example/Checkboxing',
@@ -7,7 +7,6 @@ export default {
 }
 
 const withLabel = (args) => {
-  console.log(args)
   return <Checkboxing {...args} />
 }
 

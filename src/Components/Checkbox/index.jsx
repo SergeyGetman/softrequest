@@ -4,7 +4,8 @@ import { PropTypes } from 'prop-types'
 const Checkboxing = ({ label, onChange, isChecked, id }) => {
   return (
     <div>
-      <h1 style={{ color: 'red' }}>My First Component in StoryBook</h1>
+      <p>First a wall</p>
+      <h1 style={{ color: 'red' }}>StoryBook</h1>
       <label htmlFor={id}>
         <input
           type="checkbox"
@@ -26,7 +27,7 @@ Checkboxing.propTypes = {
 }
 
 Checkboxing.defaultProps = {
-  label: 'asdqwe',
+  label: '',
   onChange: undefined,
   isChecked: true,
   id: undefined,
