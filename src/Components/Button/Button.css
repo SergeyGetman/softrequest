@@ -1,0 +1,20 @@
+.button {
+  font-weight: bold;
+  border: 0;
+  font-size: 40px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.button_part {
+  color: rgb(95, 86, 86);
+  font-size: 40px;
+  background-color: green;
+  padding: 15px;
+}
+.button_part_two {
+  color: rgb(52, 35, 35);
+  font-size: 40px;
+  background-color: #8b89e6;
+  margin-top: 25px;
+  margin-left: 25px;
+}

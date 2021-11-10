@@ -1,22 +1,19 @@
+//@ts-nocheck
+
 import React from 'react'
 import { Button } from './Button'
+
+
 
 export default {
   title: 'Example/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  
 }
+
 
 const Template = (args) => {
-  return <Button {...args} />
-}
-
-export const Primary = Template.bind({})
-Primary.args = {
-  primary: true,
-  label: 'SoftRequest',
+  return <Button {...args}/>
 }
 
 export const Secondary = Template.bind({})
@@ -35,3 +32,5 @@ Small.args = {
   size: 'small',
   label: 'Button',
 }
+
+

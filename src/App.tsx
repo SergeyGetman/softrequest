@@ -1,8 +1,8 @@
 import './App.css'
 
-const name = 'TestOwnProperty'
 
-function App(props) {
+
+function App() {
   return (
     <div className="App">
       <h1>First step redux</h1>
