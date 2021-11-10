@@ -13,25 +13,25 @@ const withLabel: ComponentStory<typeof ButtonNew> = (args) => (
   <ButtonNew {...args} />
 )
 
-export const Temp = withLabel.bind({})
-Temp.args = {
+export const Part = withLabel.bind({})
+Part.args = {
   value: true,
-  text: 'Admin',
+  text: 'First',
   backgroundColor: 'yellow',
   color: 'white',
   onClick: () => alert('Hello world'),
 }
 
-export const PartOne = Temp.bind({})
+export const PartOne = Part.bind({})
 PartOne.args = {
   value: false,
-  text: 'User',
+  text: 'Second',
   onClick: () => alert('Hello world2'),
 }
 
-export const UserColor = Temp.bind({})
-UserColor.args = {
-  text: 'User Color',
+export const PartTwo = Part.bind({})
+PartTwo.args = {
+  text: 'Third',
   backgroundColor: 'crimson',
   color: 'white',
   onClick: () => alert('Hello world3'),
