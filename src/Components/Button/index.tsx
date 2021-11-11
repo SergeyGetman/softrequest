@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import './Button.css'
 
 interface ButtonProps {
+  alt?: string
   text?: string
   backgroundColor?: string
   value?: boolean
@@ -13,10 +14,11 @@ interface ButtonProps {
 }
 
 export const ButtonNew = ({
-  text,
+  type,
   backgroundColor,
   value,
   color,
+  text,
   ...props
 }: ButtonProps) => {
   const toggle = value ? 'button_part' : 'button_part_two'
@@ -37,9 +39,10 @@ export const ButtonNew = ({
 }
 
 ButtonNew.propTypes = {
-  text: PropTypes.string,
+  type: PropTypes.string,
   backgroundColor: PropTypes.string,
   isAdmin: PropTypes.bool,
+  text: PropTypes.string,
   color: PropTypes.string,
 }
 
