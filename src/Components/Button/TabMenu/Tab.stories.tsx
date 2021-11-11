@@ -1,14 +1,14 @@
 //@ts-nocheck
 
 import React from 'react'
-import ActiveTab from './TabMenu'
+import Accordion from './TabMenu'
 
 export default {
-  title: 'Example/ActiveTab',
-  component: ActiveTab,
+  title: 'Example/Accordion',
+  component: Accordion,
 }
 
-const Template = (args) => <ActiveTab {...args} />
+const Template = (args) => <Accordion {...args} />
 
 export const First = Template.bind({})
 First.args = {

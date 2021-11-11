@@ -1,35 +1,24 @@
 //@ts-nocheck
 
 import React, { useState } from 'react'
+import { accordionData } from './TabContetnt'
 import PropTypes from 'prop-types'
 import './Tabmenu.css'
 
 const arr = ['First', 'Second', 'Third']
 
-const ActiveTab = () => {
-  const [count, setCount] = useState(0)
-
-  const clickHandler = (id) => {
-    console.log(id)
-  }
+const Accordion = ({ title, content }) => {
+  const [isActive, setIsActive] = useState(false)
 
   return (
-    <div className="wrapper">
-      <ul className="tabs">
-        {arr.map((str, idx) => {
-          return (
-            <li key={str} onClick={() => clickHandler(idx)}>
-              {str}
-            </li>
-          )
-        })}
-      </ul>
-      <div className="contents">Вы кликнули {count} раз</div>
-      <button onClick={() => setCount(count + 1)} type="button">
-        кликнуть
-      </button>
+    <div className="accordion-item">
+      <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
+        <div>{title}</div>
+        <div>{isActive ? '-' : '+'}</div>
+      </div>
+      {isActive && <div className="accordion-content">{content}</div>}
     </div>
   )
 }
 
-export default ActiveTab
+export default Accordion
