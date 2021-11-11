@@ -1,0 +1,29 @@
+.tabs {
+  font-size: 25px;
+  color: rgb(254, 254, 255);
+  border: 2px solid rgb(126, 8, 168);
+  cursor: pointer;
+}
+.wrapper {
+  font-size: 50px;
+  background-color: rgb(131, 131, 225);
+  text-align: center;
+}
+
+ul {
+  color: rgb(156, 209, 104);
+  font-size: 20px;
+  background-color: rgb(8, 7, 7);
+}
+
+button {
+  color: rgb(156, 209, 104);
+  font-size: 20px;
+  background-color: rgb(24, 48, 59);
+
+  box-shadow: rgb(254, 254, 255);
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(128, 233, 23);
+}

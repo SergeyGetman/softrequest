@@ -3,17 +3,13 @@
 import React from 'react'
 import { Button } from './Button'
 
-
-
 export default {
   title: 'Example/Button',
   component: Button,
-  
 }
 
-
 const Template = (args) => {
-  return <Button {...args}/>
+  return <Button {...args} />
 }
 
 export const Secondary = Template.bind({})
@@ -32,5 +28,3 @@ Small.args = {
   size: 'small',
   label: 'Button',
 }
-
-
