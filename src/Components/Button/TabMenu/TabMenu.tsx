@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './Tabmenu.css'
 
 type Iarr = {
+  text: string
   type: string
   backgroundColor: string
   title: string

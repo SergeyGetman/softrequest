@@ -11,9 +11,7 @@ export default {
 const Template: ComponentStory<typeof Accordion> = (args) => (
   <Accordion {...args} />
 )
-const newTemplate: ComponentStory<typeof AppLing> = (args) => (
-  <AppLing {...args} />
-)
+const newTemplate: ComponentStory<typeof AppLing> = () => <AppLing />
 
 export const First = Template.bind({})
 First.args = {

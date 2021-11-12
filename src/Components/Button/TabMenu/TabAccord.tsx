@@ -20,6 +20,7 @@ const AppLing = () => {
             }}
             type={''}
             backgroundColor={''}
+            text={''}
           />
         ))}
       </div>
