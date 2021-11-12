@@ -4,7 +4,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Button.css'
 
-interface ButtonProps {
+interface IButtonProps {
   alt?: string
   text?: string
   backgroundColor?: string
@@ -20,7 +20,7 @@ export const ButtonNew = ({
   color,
   text,
   ...props
-}: ButtonProps) => {
+}: IButtonProps) => {
   const toggle = value ? 'button_part' : 'button_part_two'
 
   const styles = ['button', toggle].join(' ')

@@ -1,13 +1,18 @@
-//@ts-nocheck
-
 import React, { useState } from 'react'
-import { accordionData } from './TabContetnt'
-import PropTypes from 'prop-types'
+
 import './Tabmenu.css'
 
-const arr = ['First', 'Second', 'Third']
+type Iarr = {
+  type: string
+  backgroundColor: string
+  title: string
+  content: string
+  isActive: boolean
+  onClick: () => void
+  setIsActive: () => void
+}
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ title, content }: Iarr) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
@@ -17,6 +22,7 @@ const Accordion = ({ title, content }) => {
         <div>{isActive ? '-' : '+'}</div>
       </div>
       {isActive && <div className="accordion-content">{content}</div>}
+      <div className="accordion"></div>
     </div>
   )
 }
