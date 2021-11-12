@@ -14,7 +14,14 @@ const Template = (args) => {
 
 export const Secondary = Template.bind({})
 Secondary.args = {
+  primary: true,
   label: 'Button',
+}
+
+export const CustomColor = Template.bind({})
+Secondary.args = {
+  label: 'Custom Color',
+  backgroundColor: 'coral',
 }
 
 export const Large = Template.bind({})

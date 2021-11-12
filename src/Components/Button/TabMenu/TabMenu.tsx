@@ -23,7 +23,7 @@ const Accordion = ({ title, content }: Iarr) => {
         <div>{isActive ? '-' : '+'}</div>
       </div>
       {isActive && <div className="accordion-content">{content}</div>}
-      <div className="accordion"></div>
+      <div className="accordion">Accordion</div>
     </div>
   )
 }

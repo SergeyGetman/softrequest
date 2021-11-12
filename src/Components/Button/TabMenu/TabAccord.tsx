@@ -1,4 +1,3 @@
-import React from 'react'
 import Accordion from './TabMenu'
 import { accordionData } from './TabContetnt'
 
