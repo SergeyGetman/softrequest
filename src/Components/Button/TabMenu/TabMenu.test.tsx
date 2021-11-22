@@ -5,6 +5,8 @@ import AppLing from './TabAccord'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
+console.log({ Appling })
+
 test('should render', () => {
   render(<Accordion title="hello world" content="level" />)
   expect(screen.getByRole('accordion')).toHaveTextContent(/hello/i)

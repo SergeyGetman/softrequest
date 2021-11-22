@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import React from 'react'
 import { ComponentStory } from '@storybook/react'
 import Accordion from './TabMenu'
@@ -11,6 +13,8 @@ export default {
 const Template: ComponentStory<typeof Accordion> = (args) => (
   <Accordion {...args} />
 )
+console.log(<Accordion />)
+
 const newTemplate: ComponentStory<typeof AppLing> = () => <AppLing />
 
 export const First = Template.bind({})

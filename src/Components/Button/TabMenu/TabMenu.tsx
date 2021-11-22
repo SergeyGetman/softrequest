@@ -13,7 +13,7 @@ type Iarr = {
   setIsActive: () => void
 }
 
-const Accordion = ({ title, content }: Iarr) => {
+const Accordion: React.FunctionComponent<Iarr> = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
@@ -23,7 +23,7 @@ const Accordion = ({ title, content }: Iarr) => {
         <div>{isActive ? '-' : '+'}</div>
       </div>
       {isActive && <div className="accordion-content">{content}</div>}
-      <div className="accordion">Accordion</div>
+      <div className="accordion"></div>
     </div>
   )
 }

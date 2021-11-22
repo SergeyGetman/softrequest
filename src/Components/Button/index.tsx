@@ -15,9 +15,9 @@ interface IButtonProps {
 export const ButtonNew = ({
   type,
   backgroundColor,
-  value,
+  value = 12,
   color,
-  text,
+  text = 'check your modal',
   ...props
 }: IButtonProps) => {
   const toggle = value ? 'button_part' : 'button_part_two'
@@ -28,7 +28,7 @@ export const ButtonNew = ({
     <button
       type="button"
       className={styles}
-      style={{ backgroundColor }}
+      style={{}}
       color={color}
       {...props}
     >
