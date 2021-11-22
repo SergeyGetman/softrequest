@@ -1,20 +1,19 @@
 //@ts-nocheck
 
-import React from 'react'
 import Accordion from './TabMenu'
 import AppLing from './TabAccord'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
-describe('Accordion', () => {
-  it('passes', () => {
-    render(<Accordion text="Hello world" />)
-  })
+console.log({ Appling })
+
+test('should render', () => {
+  render(<Accordion title="hello world" content="level" />)
+  expect(screen.getByRole('accordion')).toHaveTextContent(/hello/i)
+  expect(screen.getByText('level')).toBeInTheDocument()
 })
 
-describe('<AppLing />', () => {
-  it('Renders <AppLing /> component correctly', () => {
-    const { getByText } = render(<AppLing />)
-    expect(getByText(/Accordion/i)).toBeInTheDocument()
-  })
+it('Renders component correctly', () => {
+  const { getByText } = render(<AppLing />)
+  expect(getByRole(/Accordion/i)).toBeInTheDocument()
 })

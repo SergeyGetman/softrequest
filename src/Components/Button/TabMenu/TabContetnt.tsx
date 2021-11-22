@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const accordionData = [
   {
     title: 'Section 1',

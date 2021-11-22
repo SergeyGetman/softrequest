@@ -2,11 +2,11 @@
   font-weight: bold;
   border: 0;
   font-size: 40px;
-  border-radius: 10%;
+  margin-top: 10px;
   cursor: pointer;
 }
 .button_part {
-  color: rgb(95, 86, 86);
+  color: rgb(233, 227, 227);
   font-size: 40px;
   background-color: green;
   padding: 15px;

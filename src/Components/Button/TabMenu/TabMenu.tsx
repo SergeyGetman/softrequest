@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './Tabmenu.css'
 
 type Iarr = {
+  text: string
   type: string
   backgroundColor: string
   title: string
@@ -12,7 +13,7 @@ type Iarr = {
   setIsActive: () => void
 }
 
-const Accordion = ({ title, content }: Iarr) => {
+const Accordion: React.FunctionComponent<Iarr> = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false)
 
   return (
