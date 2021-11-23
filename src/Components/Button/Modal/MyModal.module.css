@@ -12,8 +12,8 @@
   padding: 25px;
   background: #806f6f;
   border-radius: 16px;
-  min-width: 250px;
-  min-height: 250px;
+  min-width: 750px;
+  min-height: 350px;
   border: 1px solid #1fe338;
   box-shadow: 10px 5px 5px #25e75d;
 }
@@ -22,4 +22,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.close {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 13px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: rgb(7, 6, 6);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }

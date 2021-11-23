@@ -1,15 +1,19 @@
 .button {
   font-weight: bold;
   border: 0;
-  font-size: 40px;
+  font-size: 20px;
   margin-top: 10px;
   cursor: pointer;
 }
 .button_part {
-  color: rgb(233, 227, 227);
-  font-size: 40px;
-  background-color: green;
+  color: rgb(32, 31, 31);
+  font-size: 20px;
+  background-color: rgb(36, 185, 193);
   padding: 15px;
+  border: 2px solid rgb(50, 45, 199);
+}
+.button_part:hover {
+  background-color: rgb(55, 223, 117);
 }
 .button_part_two {
   color: rgb(52, 35, 35);

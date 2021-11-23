@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <ButtonNew onClick={() => setModal(true)} />,
       <MyModal visible={modal} setVisible={setModal}>
-        {<h1>First step redux</h1>}{' '}
+        {<h1>This is news of world IT</h1>}{' '}
       </MyModal>
       <br />
       <AppLing />
