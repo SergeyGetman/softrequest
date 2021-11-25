@@ -1,11 +1,7 @@
-//@ts-nocheck
-
 import Accordion from './TabMenu'
 import AppLing from './TabAccord'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-
-console.log({ Appling })
 
 test('should render', () => {
   render(<Accordion title="hello world" content="level" />)

@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <ButtonNew onClick={() => setModal(true)} />,
-      <MyModal visible={modal} setVisible={setModal}>
+      <MyModal visible={modal} onClose={() => setModal(false)}>
         {<h1>This is news of world IT</h1>}{' '}
       </MyModal>
       <br />

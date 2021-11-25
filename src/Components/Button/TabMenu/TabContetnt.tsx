@@ -1,5 +1,6 @@
 export const accordionData = [
   {
+    id: 1,
     title: 'Section 1',
     content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
     laborum cupiditate possimus labore, hic temporibus velit dicta earum
@@ -7,6 +8,7 @@ export const accordionData = [
     voluptatem.`,
   },
   {
+    id: 2,
     title: 'Section 2',
     content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
     reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
@@ -16,6 +18,7 @@ export const accordionData = [
     Repudiandae, mollitia id reprehenderit a ab odit!`,
   },
   {
+    id: 3,
     title: 'Section 3',
     content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
     quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos

@@ -5,18 +5,18 @@ import { Part } from './button.stories'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
-// describe('ButtonNew', () => {
-//   it('passes', () => {
-//     render(<ButtonNew text="Hello world" />)
-//     const elem = screen.getByText(/hello/i)
-//     expect(elem).toBeInTheDocument()
-//   })
+describe('ButtonNew', () => {
+  it('passes', () => {
+    render(<ButtonNew text="Hello world" />)
+    const elem = screen.getByText(/hello/i)
+    expect(elem).toBeInTheDocument()
+  })
 
-//   test('should render custom color', () => {
-//     render(<ButtonNew {...ButtonNew.args} />)
-//     expect(screen.getByRole('first')).toHaveTextContent(/first/i)
-//   })
-// })
+  test('should render custom color', () => {
+    render(<ButtonNew {...ButtonNew.args} />)
+    expect(screen.getByRole('first')).toHaveTextContent(/first/i)
+  })
+})
 
 test('should render', () => {
   const { container } = render(<Part {...Part.args} />)

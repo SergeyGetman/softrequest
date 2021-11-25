@@ -1,13 +1,12 @@
-//@ts-nocheck
-
 import PropTypes from 'prop-types'
 import './Button.css'
 
 interface IButtonProps {
+  type?: string
   alt?: string
   text?: string
   backgroundColor?: string
-  value?: boolean
+  value?: number
   color?: string
   onClick?: () => void
 }

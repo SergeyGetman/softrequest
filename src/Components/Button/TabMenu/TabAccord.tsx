@@ -6,8 +6,9 @@ const AppLing = () => {
     <div>
       <h1>Accordion</h1>
       <div className="accordion">
-        {accordionData.map(({ title, content }) => (
+        {accordionData.map(({ title, content, id }) => (
           <Accordion
+            key={id}
             title={title}
             content={content}
             isActive={false}
